@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const s = Math.floor((diff % 60000) / 1000);
 
     // --- GESTION DES INDICES (Change le texte selon les jours restants) ---
+   // --- GESTION DES INDICES (Change le texte selon les jours restants) ---
     const messageEl = document.getElementById("message");
     if (messageEl && diff > 0) {
       if (d === 3) {
@@ -41,13 +42,14 @@ document.addEventListener("DOMContentLoaded", () => {
           "Indice J-3 : Prépare tes yeux pour du grand bleu...<br><span class='author'>— Corentin</span>";
       } else if (d === 2) {
         messageEl.innerHTML =
-          "Indice J-2 : On va rendre visite à des habitants qui ne clignent jamais des yeux.<br><span class='author'>— Corentin</span>";
+          "Indice J-2 : Bientôt le départ...<br><span class='author'>— Corentin</span>"; 
       } else if (d === 1) {
         messageEl.innerHTML =
           "Indice J-1 (Énigme) : Je plane majestueusement sans jamais toucher le ciel. Qui suis-je ?<br><span class='author'>— Retiens bien la réponse pour demain...</span>";
       } else if (d > 3) {
+        // LA NOUVELLE ÉNIGME EST ICI ! (Elle s'affichera dès maintenant)
         messageEl.innerHTML =
-          "\"j'ai pensé à toi pour cette surprise,<br>parce que tu mérites un moment qui te ressemble.\"<br><span class='author'>— Corentin</span>";
+          "Énigme : On va rendre visite à des habitants qui ne clignent jamais des yeux. Qui sont-ils ?<br><span class='author'>— Corentin</span>";
       }
     }
 

@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Une surprise pour toi ✨</title>
+<title>Accès Restreint 🔒</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+<div class="ocean-bg" id="ocean-bg"></div>
 
 <div class="particles" id="particles"></div>
 
@@ -17,11 +19,11 @@
 
 <div class="container">
 
-  <div class="badge" id="badge">✨ quelque chose t'attend</div>
+  <div class="badge" id="badge">⚠️ analyse en cours</div>
 
   <div class="headline" id="headline">
-    <h1>une <em>surprise</em><br>rien que pour toi</h1>
-    <p>le compte à rebours a commencé…<br>patience, ça va valoir le coup ✨</p>
+    <h1>accès <em>verrouillé</em><br>données cryptées</h1>
+    <p>le compte à rebours a commencé…<br>le protocole de révélation est en attente.</p>
   </div>
 
   <div class="countdown" id="countdown">
@@ -47,34 +49,24 @@
   </div>
 
   <div class="date-card" id="date-card">
-    <div class="date-label">rendez-vous le</div>
+    <div class="date-label">date d'extraction</div>
     <div class="date-val">28 juin 2026</div>
   </div>
 
-  <div class="message" id="message" style="text-align: left; font-family: 'Courier New', monospace; background: rgba(0, 0, 0, 0.6); border-left: 3px solid #ff4d4d; border-radius: 4px; padding: 1.5rem; max-width: 450px;">
-    <span style="color: #ff4d4d; font-weight: bold; font-size: 0.9rem;">>_ ANALYSE DE L'HUMEUR : CRITIQUE</span><br><br>
-    <span style="color: var(--gold-light); font-size: 1rem; line-height: 1.6;">
-      Je peux être de glace, mais je brûle les impatients.<br>
-      Je me compte en chiffres, mais je parais une éternité.<br>
-      Si tu cherches à me forcer, je me rallonge.<br><br>
-    </span>
-    <span style="color: var(--muted); font-size: 0.85rem; font-style: italic;">
-      Indice : Regarde juste au-dessus de toi pour trouver la réponse...
-    </span>
-  </div>
+  <div class="message" id="message"></div>
 
   <div id="surprise-reveal" class="hidden">
     
     <div id="password-lock" class="lock-container">
       <p class="lock-text">
-        Pour découvrir la surprise, résous cette ultime énigme :<br>
+        Pour décrypter la destination, résous cette ultime énigme :<br>
         <span style="color: var(--gold); font-size: 1.1em; display: inline-block; margin-top: 15px; font-weight: 500;">
           "Je plane majestueusement sans jamais toucher le ciel. Qui suis-je ?"
         </span>
       </p>
       <input type="text" id="secret-input" class="lock-input" placeholder="Ta réponse...">
       <button id="unlock-btn" class="lock-btn">Valider</button>
-      <p id="error-msg" class="lock-error hidden">Mauvaise réponse... Cherche encore ! 😈</p>
+      <p id="error-msg" class="lock-error hidden">Accès refusé... Cherche encore ! 😈</p>
     </div>
 
     <div id="ticket-container" class="hidden">
@@ -92,7 +84,7 @@
           </div>
         </div>
         <div class="sleeve" id="sleeve">
-          <span class="pulse-text">Clique pour ouvrir ✨</span>
+          <span class="pulse-text">Clique pour extraire ✨</span>
         </div>
       </div>
     </div>
