@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const els = {
     d: document.getElementById("d"),
     h: document.getElementById("h"),
-    m: document.getElementById("m"),
+    m: document.getElementById("m"), 
     s: document.getElementById("s"),
   };
 
