@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
           "Indice J-3 : Prépare tes yeux pour du grand bleu...<br><span class='author'>— Corentin</span>";
       } else if (d === 2) {
         messageEl.innerHTML =
-          "Indice J-2 : Bientôt le départ...<br><span class='author'>— Corentin</span>"; 
+          "Indice J-2 : Je plane majestueusement sans jamais toucher le ciel. Qui suis-je ?<br><span class='author'>— Retiens bien la réponse pour demain...</span>"; 
       } else if (d === 1) {
         messageEl.innerHTML =
-          "Indice J-1 (Énigme) : Je plane majestueusement sans jamais toucher le ciel. Qui suis-je ?<br><span class='author'>— Retiens bien la réponse pour demain...</span>";
+          "Indice J-1 (Énigme) : Je danse sous les vagues comme un oiseau sous les nuages. Plate et gracieuse, je survole les fonds marins. Qui suis-je ? <br><span class='author'>— Corentin</span>";
       } else if (d > 3) {
         // LA NOUVELLE ÉNIGME EST ICI ! (Elle s'affichera dès maintenant)
         messageEl.innerHTML =
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // 2. On attend la fin de l'animation CSS (800ms) avant d'afficher la suite
       setTimeout(() => {
-        // On cache vraiment les éléments
+        // On cache vraiment les élémentsén
         document.getElementById("headline").classList.add("hidden");
         document.getElementById("countdown").classList.add("hidden");
         document.getElementById("date-card").classList.add("hidden");
