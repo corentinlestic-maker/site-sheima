@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Pour tes tests : 10 secondes. Pour le jour J, commente ça et décommente la vraie date en dessous !
-  const TARGET = new Date("2026-06-28T10:00:00");
+  const TARGET = new Date("2026-06-26T12:50:00");
 
   const els = {
     d: document.getElementById("d"),
